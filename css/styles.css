@@ -1,0 +1,163 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --primary-brand-color: #4d5ae5; /* CTAs, focused, active links */
+  --pressed-state-color: #404bbf; /* CTAs */
+  --dark-color: #2e2f42; /* Overlays, Shadows, Headinngs */
+  --success-color: #31d0aa; /* Valid fields, success messages */
+  --text-color: #434455; /* Body text */
+  --subtle-color: #8e8f99; /* Helper text, Deemphasized text*/
+  --accent-color: #e7e9fc; /* Accent color, Hairlines, Subtle backgrounds */
+  --light-color: #f4f4fd; /* Light mode backgrounds, Light mode Dialogs/alerts */
+  --modal-overlay-color: #2e2f42; /* Overlay */
+  --hero-background-color: #2e2f42; /* Hero image background */
+  --white-background-color: #fff; /* Header, team card background,  */
+  --modal-background-color: #fcfcfc; /* Modal background */
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  background-color: var(--white-background-color);
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.section-title,
+.cards-title {
+  color: var(--dark-color);
+  letter-spacing: 0.02em;
+}
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.main-title,
+.section-title {
+  line-height: 1.11;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  color: var(--primary-brand-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo .dark-logo {
+  color: var(--dark-color);
+}
+
+.logo .white-logo {
+  color: var(--light-color);
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contacts .link {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.nav-links {
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+  color: var(--pressed-state-color);
+}
+
+.solutions-section,
+footer {
+  background-color: var(--dark-color);
+}
+
+.our-team-section {
+  background-color: var(--light-color);
+}
+
+.main-title {
+  color: var(--white-background-color);
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.order-btn,
+.filters-btn {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.order-btn {
+  background-color: var(--primary-brand-color);
+  color: var(--white-background-color);
+}
+
+.filters-btn {
+  background-color: var(--light-color);
+  color: var(--primary-brand-color);
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-background-color);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.cards-title {
+  line-height: 1.2;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  background-color: #fff;
+}
+
+.cards-text {
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.team-card {
+  background-color: #ffffff;
+}
+
+.footer-text {
+  color: var(--light-color);
+  letter-spacing: 0.02em;
+}
