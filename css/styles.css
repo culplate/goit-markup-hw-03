@@ -15,6 +15,10 @@
   --modal-background-color: #fcfcfc; /* Modal background */
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--primary-font);
   color: var(--text-color);
@@ -23,6 +27,9 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -35,14 +42,32 @@ p {
   margin: 0;
 }
 
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+img {
+  display: block;
+}
+
+main {
+  flex-grow: 1;
+}
+
 .list {
   list-style: none;
-  padding-left: 0;
 }
 
 .link {
   color: var(--text-color);
   text-decoration: none;
+  display: block;
 }
 
 .container {
@@ -68,22 +93,49 @@ p {
   line-height: 1.11;
 }
 
+/* LOGO */
+
 .logo {
   text-transform: uppercase;
   font-family: var(--secondary-font);
-  color: var(--primary-brand-color);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
-.logo .dark-logo {
+.logo span {
+  color: var(--primary-brand-color);
+}
+
+.dark-logo {
   color: var(--dark-color);
 }
 
-.logo .white-logo {
+.light-logo {
   color: var(--light-color);
+}
+
+/* HEADER */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 76px;
+  align-items: center;
+}
+
+.navigation-menu,
+.contacts-list {
+  display: flex;
+  /* align-items: center; */
+  gap: 40px;
 }
 
 .contacts {
@@ -101,6 +153,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .nav-links:hover,
@@ -108,13 +161,19 @@ p {
   color: var(--pressed-state-color);
 }
 
+/* SOLUTIONS SECTION */
+
 .solutions-section,
 footer {
   background-color: var(--dark-color);
 }
 
-.our-team-section {
-  background-color: var(--light-color);
+.solutions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  height: 600px;
 }
 
 .main-title {
@@ -124,6 +183,23 @@ footer {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  width: 496px;
+  padding-top: 188px;
+  margin-bottom: 48px;
+}
+
+.order-btn {
+  background-color: var(--primary-brand-color);
+  color: var(--white-background-color);
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* OUR TEAM SECTION */
+
+.our-team-section {
+  background-color: var(--light-color);
 }
 
 .order-btn,
@@ -134,11 +210,6 @@ footer {
   font-family: var(--primary-font);
   line-height: 1.5;
   letter-spacing: 0.04em;
-}
-
-.order-btn {
-  background-color: var(--primary-brand-color);
-  color: var(--white-background-color);
 }
 
 .filters-btn {
