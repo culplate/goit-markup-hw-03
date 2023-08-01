@@ -1,6 +1,6 @@
 :root {
-  --primary-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --primary-brand-color: #4d5ae5; /* CTAs, focused, active links */
   --pressed-state-color: #404bbf; /* CTAs */
   --dark-color: #2e2f42; /* Overlays, Shadows, Headinngs */
@@ -25,13 +25,30 @@ body {
   font-size: 16px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .list {
   list-style: none;
+  padding-left: 0;
 }
 
 .link {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .section-title,
@@ -160,4 +177,17 @@ footer {
 .footer-text {
   color: var(--light-color);
   letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
