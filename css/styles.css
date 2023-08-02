@@ -86,6 +86,7 @@ main {
   font-size: 36px;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .main-title,
@@ -117,6 +118,14 @@ main {
 }
 
 /* HEADER */
+
+.topline {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.navigation .logo {
+  margin-right: 76px;
+}
 
 .header-container {
   display: flex;
@@ -168,12 +177,15 @@ footer {
   background-color: var(--dark-color);
 }
 
+.solutions-section {
+  padding: 188px 0;
+}
+
 .solutions-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  height: 600px;
 }
 
 .main-title {
@@ -183,8 +195,7 @@ footer {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
-  padding-top: 188px;
+  max-width: 496px;
   margin-bottom: 48px;
 }
 
@@ -192,8 +203,52 @@ footer {
   background-color: var(--primary-brand-color);
   color: var(--white-background-color);
   padding: 16px 32px;
+  min-width: 169px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* BENEFITS SECTION */
+
+.benefits-section {
+  padding: 120px 0;
+}
+
+.benefits-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits-card {
+  max-width: 264px;
+}
+
+.benefits-card .cards-title {
+  margin-bottom: 8px;
+}
+
+/* WE DOING SECTION */
+
+.we-doing-section {
+  /* padding: 120px 0; */
+}
+
+.we-doing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.we-doing-container .list {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 24px;
+}
+
+.we-doing-img {
+  border: 1px solid var(--accent-color);
 }
 
 /* OUR TEAM SECTION */
